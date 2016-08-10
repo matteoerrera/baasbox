@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 
+
 import sbt._
 import Keys._
 import play.Project._
@@ -29,7 +29,7 @@ object ApplicationBuild extends Build {
 	override def settings = super.settings ++ Seq(
       EclipsePlugin.EclipseKeys.preTasks := Seq()
     )
-  
+
 	val conf = ConfigFactory.parseFile(new File("conf/application.conf")).resolve()
 	val appName         = "BaasBox"
   val appVersion      = conf.getString("api.version")
@@ -61,7 +61,7 @@ object ApplicationBuild extends Build {
            "com.orientechnologies" % "orientdb-distributed" % "1.7.10",
           "ch.qos.logback" % "logback-classic" % "1.1.2",
           "org.slf4j" % "slf4j-api" % "1.7.6",
- 
+
           "com.notnoop.apns" % "apns" % "1.0.0.Beta6",
           "com.typesafe" %% "play-plugins-redis" % "2.2.1",
           "org.mockito" % "mockito-core" % "1.10.19" % Test,
@@ -84,7 +84,7 @@ object ApplicationBuild extends Build {
           "sonatype-releases" at "https://oss.sonatype.org/content/repositories/releases",
           "sonatype-snapshots" at "https://oss.sonatype.org/content/repositories/snapshots",
 		      "eaio" at "http://eaio.com/maven2",
-          "Sedis Repo" at "http://pk11-scratch.googlecode.com/svn/trunk"
+          "Sedis Repo" at "https://raw.githubusercontent.com/dmunicio/sedis/2832a469ec4f9b4845c9cb957457e423bfafddeb/trunk"
 	      )
        ,baas := {
           val distributionName = name.value.toLowerCase + "-" + version.value

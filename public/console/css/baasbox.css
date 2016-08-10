@@ -24,6 +24,8 @@
     font-family: 'fjalla';
     src: url('FjallaOne-Regular.otf') format('opentype');
 }
+
+
 .nav-tabs li.active:first-child a{
   border-left:0px;
 }
@@ -31,7 +33,7 @@
 #currentVersion{
 	font-size:13px;
 	padding-right:20px;
-	color:rgb(14, 15, 15);	
+	color:rgb(14, 15, 15);
 }
 
 #dbmanager .actions{
@@ -340,11 +342,11 @@ nav {
 
 .deleteExport{
 	margin-right:0px !important;
-} 
+}
 
 .downloadExport{
 	margin-right:0px !important;
-} 
+}
 
 .btn-group > .btn, .btn-group > .dropdown-menu, .btn-group > .popover {
 	margin-right:-100px;
@@ -427,14 +429,14 @@ li.plugin.deactivated{
       display: inline-block;
       overflow: hidden;
       text-overflow: ellipsis;
-      white-space: nowrap;  
+      white-space: nowrap;
       position: relative;
    }
 .black{
 	color:black;
 }
 
-.log-area {	
+.log-area {
 	height:auto;
     width: 100%;
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
