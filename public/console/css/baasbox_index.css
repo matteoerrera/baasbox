@@ -1,0 +1,37 @@
+body
+{
+  text-align: center;
+  background-color:#192226;
+  font-family: 'Open Sans', sans-serif;
+  color:#ffffff
+}
+.logoindex {
+  width:270px;
+  height:79px;
+}
+.container {
+  margin-top:15%;
+  margin-left: auto;
+  margin-right: auto;
+  width:500px;
+  min-height: 300px
+}
+h2{
+  color:#fff;
+  font-size: 15pt;
+}
+.button{
+display: inline-block;
+margin:20px;
+padding: 13px 25px;
+border: 1.4px white solid;
+border-radius: 5px 5px 5px 5px;
+text-transform: uppercase;
+font-family: 'OpenSans', sans-serif;
+font-size: 16px;
+font-weight: bold;
+letter-spacing: 0.1px;
+text-align: center;
+color: #ffffff;
+text-decoration: none;
+}

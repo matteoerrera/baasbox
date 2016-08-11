@@ -19,134 +19,13 @@
 -->
 	<head>
 
-        <title>BaasBox v.@version @edition</title>
+    <title>BaasBox v.@version @edition</title>
 
-		<style>
-			body
-			{
-				text-align: center;
-				background-color:#192226;
-				font-family: 'Open Sans', sans-serif;
-				color:#ffffff
-			}
-			.logoindex {
-				width:270px;
-				height:79px;
-			}
-			.container {
-				margin-top:15%;
-				margin-left: auto;
-				margin-right: auto;
-				width:500px;
-				min-height: 300px
-			}
-			h2{
-				color:#fff;
-				font-size: 15pt;
-			}
-			.button{
-	    display: inline-block;
-			margin:20px;
-	    padding: 13px 25px;
-	    border: 1.4px white solid;
-	    border-radius: 5px 5px 5px 5px;
-	    text-transform: uppercase;
-	    font-family: 'OpenSans', sans-serif;
-	    font-size: 16px;
-	    font-weight: bold;
-	    letter-spacing: 0.1px;
-	    text-align: center;
-	    color: #ffffff;
-			text-decoration: none;
-		}
-
-
-
-
-
-
-
-
-/*
-			.mainmenu {
-				text-align: center;
-			}
-
-			.mainmenu .menulist {
-		    display: inline-block;
-		    padding: 0.5em 1em;
-		    position: relative;
-		    text-align: center;
-		}
-
-			nav {
-			    display: block;
-
-			}
-
-			.mainmenu .menulist ul {
-					margin: 0 auto;
-					text-align: center;
-			}
-			.mainmenu .menulist ul li a {
-			  position:relative;
-				display: inline-block;
-				font-size: 21px;
-				color:#fff;
-			  text-decoration: none;
-			}
-			.mainmenu .menulist ul li {
-				float: left;
-			  list-style: none outside none;
-				margin-left:20px;
-			}
-
-			.border_active {
-				padding-bottom:5px;
-				width:0%;
-				height:5px;
-				left:0;
-			  margin-left:-5px;
-				bottom:-5px;
-				background-color: #ff5368;
-				position: absolute;
-				transition:all ease-out 300ms;
-			}
-*/
-
-		</style>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link href='/console/css/baasbox_index.css' rel='stylesheet' type='text/css'>
 		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 		<link type="image/x-icon" rel="shortcut icon" href="console/favicon.ico">
 		<link type="image/x-icon" rel="icon" href="console/favicon.ico" />
-
-		<script>
-		    	$(document).ready(function() {
-		    		var delay;
-		    		setupMenu();
-		    		$(".mainmenu .menulist ul li a").mouseenter(function() {
-		    			clearTimeout(delay);
-		    			var width	= $(this).width();
-		    			var left	= $(this).position().left+5;
-		    			$(".border_active").css("width", width+ "px").css("left", left+"px");
-		    		}).mouseleave(function() {
-		    			delay = setTimeout(setupMenu, 200);
-		    		});
-
-
-		    	});
-
-		    	function setupMenu(){
-		    		if($(".current_page_item").length>0){
-		    	var width	= $(".current_page_item").width();
-		    	var left	= $(".current_page_item").position().left+5;
-		    	$(".border_active").css("width", "51px").css("left", left+"px");
-		    }
-		    else {
-		    	$(".border_active").css("width", "0" + "px").css("left", "0"+"px");
-		    }
-		    	}
-		</script>
 	</head>
 	<body>
 		<div class="container">
@@ -162,25 +41,6 @@
 				<div class="mainmenu">
 				<a class="button" href="http://www.baasbox.com/documentation/">Docs</a>	<a class="button" href="/console">Login</a>
 				</div>
-
-
-<!--
-				<div class="mainmenu">
-
-		            <nav class="menulist">
-	                <span class="border_active"></span>
-
-		                <ul class="items">
-	                    <li class="menu-item"><a href="http://vccw.dev/features">Administration Login</a></li>
-	                    <li class="menu-item"><a href="http://vccw.dev/docs">Docs</a></li>
-										</ul>
-
-									</nav>
-		    </div>
--->
-
-
-
 
 		</div>
 
