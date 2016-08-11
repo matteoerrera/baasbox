@@ -5246,6 +5246,13 @@ a.badge:focus {
   color: #9b9b9b;
 }
 @media (max-width: 979px) {
+  .user {
+      margin-top: 71px;
+      position: absolute;
+      right: 0;
+      margin-right: 50px;
+  }
+
   .navbar .nav-collapse .nav li > a {
     font-family: 'Lato', sans-serif;
     font-weight: normal;
