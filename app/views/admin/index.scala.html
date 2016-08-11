@@ -31,6 +31,8 @@
 	<link href='css/baasbox.css' rel='stylesheet'>
 	<link href='css/font-awesome.min.css' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="css/baasbox-jsnippet.css" />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 
 	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -41,6 +43,35 @@
 	<!-- The fav icon -->
 	<link type="image/x-icon" rel="shortcut icon" href="favicon.ico">
 	<link type="image/x-icon" rel="icon" href="favicon.ico" />
+<script>
+function setupMenu(){
+	if($(".current_page_item").length>0){
+var width	= $(".current_page_item").width();
+var left	= $(".current_page_item").position().left+5;
+$(".border_active").css("width", "51px").css("left", left+"px");
+}
+else {
+$(".border_active").css("width", "0" + "px").css("left", "0"+"px");
+}
+}
+
+    	$(document).ready(function() {
+    		var delay;
+    		setupMenu();
+    		$(".mainmenu .menuwrapper .menulist ul li a").mouseenter(function() {
+    			clearTimeout(delay);
+    			var width	= $(this).width();
+    			var left	= $(this).position().left+5;
+    			$(".border_active").css("width", width+ "px").css("left", left+"px");
+    		}).mouseleave(function() {
+    			delay = setTimeout(setupMenu, 200);
+    		});
+
+
+    	});
+
+
+			</script>
 </head>
 
 <body>
