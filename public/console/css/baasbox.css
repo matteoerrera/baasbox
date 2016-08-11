@@ -412,6 +412,9 @@ nav {
 .plugin .action{
 	font-size:11px;
 }
+.box-content {
+  overflow: auto;
+}
 .box-content ul.plugin{
 	margin:-10px;
 }
