@@ -686,9 +686,9 @@
   body {
     padding-top: 0;
   }
-.hidden-tablet {display:none}
+//.hidden-tablet {display:none}
 .leftbar-menu li {
-  float:left;
+  //float:left;
 }
 
   .navbar-fixed-top,

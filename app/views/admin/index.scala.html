@@ -68,13 +68,35 @@ $(".border_active").css("width", "0" + "px").css("left", "0"+"px");
     		});
 
 
+				$('.menutoggle').click(function() {
+					console.log("click");
+			$('.leftbar-menu').toggleClass('open_menu');
+			$('.black-screen').toggleClass('black-screen-active');
+
+			});
+
+			$('.black-screen').click(function() {
+				$('.leftbar-menu').toggleClass('open_menu');
+				$('.black-screen').toggleClass('black-screen-active');
+
+			});
+
+			$('.left-menu-item').click(function() {
+				$('.leftbar-menu').toggleClass('open_menu');
+				$('.black-screen').toggleClass('black-screen-active');
+
+			});
+
     	});
+
+
 
 
 			</script>
 </head>
 
 <body>
+	<div class="black-screen"></div>
 	@noscript()
 	<!-- --------- -->
 	<input id="loggedIn" type="hidden" ng-model="loggedIn"   ng-init="loggedIn=false"/>

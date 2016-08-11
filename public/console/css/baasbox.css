@@ -328,14 +328,45 @@ nav {
 	margin-top:-6px !important;
 	border:none !important;
 }
-@media (max-width: 767px) {
+@media (max-width:767px){
   .leftbar-menu {
-    margin-left: 0px !important;
-    margin-top:10px !important;
-    margin-bottom:20px;
-    text-align: center;
+    margin-top: -10px !important;
+    position: fixed;
+    width: 80%;
+    z-index: 10;
+    overflow: auto;
+    height: 100vh;
+    left: -1000px;
+    transition: all ease-in-out 250ms;
+    }
+    .black-screen {
+      left:100vh;
+      width:100vh;
+      height:100vh;
+      background-color: black;
+      opacity: 0.9;
+      position: fixed;
+      z-index:2;
+      overflow: hidden;
+      transition: all ease-in-out 250ms;
+    }
+    .menutoggle {
+      background-image: url("/console/img/menuopen.png");
+      background-size: cover;
+      width:30px;
+      height:30px;
+      position: absolute;
+      z-index: 1;
+    }
   }
-}
+
+  .black-screen-active {
+  left: 0;
+  }
+
+.open_menu {
+    left: 0 !important;
+  }
 .deleteExport{
 	margin-right:0px !important;
 }
