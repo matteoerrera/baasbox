@@ -329,6 +329,14 @@ nav {
 	border:none !important;
 }
 @media (max-width:767px){
+  .box-content {
+    height:auto;
+    min-height: 100px;
+    overflow-x: auto;
+    //overflow-y: hidden;
+    //resize: vertical;
+
+  }
   .leftbar-menu {
     margin-top: -10px !important;
     position: fixed;
@@ -340,15 +348,16 @@ nav {
     transition: all ease-in-out 250ms;
     }
     .black-screen {
-      left:100vh;
+      //left:100vh;
       width:100vh;
       height:100vh;
       background-color: black;
-      opacity: 0.9;
+      opacity: 0.0;
       position: fixed;
       z-index:2;
       overflow: hidden;
-      transition: all ease-in-out 250ms;
+      visibility: hidden;
+    transition: visibility 0s, opacity 0.2s linear;
     }
     .menutoggle {
       background-image: url("/console/img/menuopen.png");
@@ -361,7 +370,8 @@ nav {
   }
 
   .black-screen-active {
-  left: 0;
+    opacity: 0.9;
+    visibility: visible;
   }
 
 .open_menu {
@@ -412,9 +422,7 @@ nav {
 .plugin .action{
 	font-size:11px;
 }
-.box-content {
-  overflow: auto;
-}
+
 .box-content ul.plugin{
 	margin:-10px;
 }

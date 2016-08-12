@@ -124,7 +124,8 @@
     margin: 0;
   }
   .modal.fade.in {
-    top: auto;
+    top:0;
+    position: fixed;
   }
   .modal-header .close {
     padding: 10px;
